@@ -73,6 +73,10 @@ h1 {
   cursor: pointer;
 }
 
+.cookie:hover {
+  animation: vibrate 0.3s linear infinite both;
+}
+
 /* Screen2 */
 
 .screen2 {
@@ -83,6 +87,7 @@ h1 {
 }
 
 .lucky-card {
+  animation: downTop 1.5s;
   padding: 1rem;
   background: var(--bg-luck-card);
   box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
@@ -111,10 +116,6 @@ button {
 
 /* Animations */
 
-.cookie:hover {
-  animation: vibrate 0.3s linear infinite both;
-}
-
 @keyframes vibrate {
   0%,
   100% {
@@ -132,11 +133,6 @@ button {
   80% {
     transform: translate(2px, -2px);
   }
-}
-
-.lucky-card {
-  /* animation: downTop 2s timing-function delay iteration-count direction fill-mode; */
-  animation: downTop 1.5s;
 }
 
 @keyframes downTop {
